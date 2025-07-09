@@ -54,7 +54,7 @@ Experienced in building personal and training projects, solving a wide range of 
 
 ## Code Example
 
-```
+```ts
 function chooseBestSum(maxDistance, townsToVisit, distances) {
     let bestSum = 0;
     
