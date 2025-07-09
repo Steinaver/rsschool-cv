@@ -1,4 +1,4 @@
-# Vlad Solar
+# Vlad Hodlievskyi
 
 ## My Contact Info:
 
@@ -49,3 +49,35 @@ Experienced in building personal and training projects, solving a wide range of 
 - Writing reusable components and scalable design systems
 - Working with design tools and pixel-perfect implementation
 - Debugging and handling edge cases in real-world production apps
+
+---
+
+## Code Example
+
+```
+function chooseBestSum(maxDistance, townsToVisit, distances) {
+    let bestSum = 0;
+    
+    function findCombination(townsLeft, start = 0, currentSum = 0) {
+        if (townsLeft === 0) {
+            if (currentSum <= maxDistance && currentSum > bestSum) bestSum = currentSum;
+            return;
+        }
+        for (let i = start; i < distances.length; i++) {
+            if (currentSum + distances[i] > maxDistance) continue;
+            findCombination(townsLeft - 1, i + 1, currentSum + distances[i]);
+        }
+    }
+    
+    findCombination(townsToVisit);
+    return bestSum > 0 ? bestSum : null;
+}
+```
+
+---
+
+## Languages
+
+- **Russian** — Native
+- **Ukrainian** — Fluent
+- **English** — Intermediate (reading technical documentation, writing, and verbal communication)
