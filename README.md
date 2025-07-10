@@ -1,1 +1,1 @@
-https://Steinaver.github.io/rsschool-cv/cv
+https://Steinaver.github.io/rsschool-cv/
