@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>CV Page</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.css?_v=20250712233240">
+	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<button aria-label="Website navigation menu" class="menu__icon icon-menu" type="button">
+						<span class="icon-menu__burger"><span></span></span>
+						<span class="icon-menu__cross"></span>
+					</button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link" data-goto="#about" data-goto-header>About me</a></li>
+							<li class="menu__item"><a href="#" class="menu__link" data-goto="#skills" data-goto-header>Skills</a></li>
+							<li class="menu__item"><a href="#" class="menu__link" data-goto="#code" data-goto-header>Code</a></li>
+							<li class="menu__item"><a href="#" class="menu__link" data-goto="#projects" data-goto-header>Projects</a></li>
+							<li class="menu__item"><a href="#" class="menu__link" data-goto="#education" data-goto-header>Education</a></li>
+							<li class="menu__item"><a href="#" class="menu__link" data-goto="#contacts" data-goto-header>Contacts</a></li>
+							<li class="menu__item"><a href="#" class="menu__link" data-goto="#english" data-goto-header>English</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__hero hero">
+				<div class="hero__container">
+					<div class="hero__image">
+						<img src="./img/profile-picture.jpg" alt="profile picture">
+					</div>
+					<div class="hero__content">
+						<strong class="hero__caption caption">Frontend Web Developer</strong>
+						<h1 class="hero__title title">Vlad Hodlievskiy</h1>
+					</div>
+				</div>
+			</section>
+			<section class="page__info info">
+				<div class="info__container">
+					<div class="info__item" id="about">
+						<h2 class="title">About me</h2>
+						<p>
+							Motivated frontend developer with a strong theoretical background and extensive hands-on practice in modern web technologies, including React and TypeScript.
+						</p>
+						<p>
+							Passionate about writing clean, efficient, and scalable code. Focused on performance, code quality, and UI consistency.
+						</p>
+						<p>Experienced in building personal and training projects, solving a wide range of real-world problems, and continuously improving development skills through deep exploration of frontend tools and best practices.</p>
+					</div>
+					<div class="info__item" id="skills">
+						<h2 class="title">Skills</h2>
+						<ul>
+							<li>Advanced JavaScript & TypeScript</li>
+							<li>React & Redux Toolkit</li>
+							<li>HTML, CSS, SCSS — pixel-perfect layout</li>
+							<li>Testing: Jest, integration & E2E</li>
+							<li>Performance optimization & profiling</li>
+						</ul>
+					</div>
+					<div class="info__item" id="code">
+						<h2 class="title">Code</h2>
+						<pre><code>function lastDigit(base, exponent) {
+  if (exponent === 0n) return 1n;
+
+  const baseLastDigit = base % 10n;
+  const effectiveExponent = exponent % 4n || 4n;
+  return (baseLastDigit ** effectiveExponent) % 10n;
+}</code></pre>
+					</div>
+					<div class="info__item" id="projects">
+						<h2 class="title">Projects</h2>
+						<ul>
+							<li><a href="https://steinaver.github.io/HouseDecor/">House Decor</a></li>
+							<li><a href="https://steinaver.github.io/Interia/">Interia</a></li>
+							<li><a href="https://steinaver.github.io/Bean-Scene/">Bean Scene</a></li>
+						</ul>
+					</div>
+					<div class="info__item" id="education">
+						<h2 class="title">Education</h2>
+						<ul>
+							<li>Igor Sikorsky Kyiv Polytechnic Institute</li>
+						</ul>
+					</div>
+					<div class="info__item" id="contacts">
+						<h2 class="title">Contacts</h2>
+						<ul>
+							<li><a href="https://t.me/pmhhhhhh">Telegram</a></li>
+							<li><a href="https://github.com/Steinaver">Github</a></li>
+						</ul>
+					</div>
+					<div class="info__item" id="english">
+						<h2 class="title">English</h2>
+						<p>B2 - Intermediate</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__github">
+					© 2025
+					<a href="https://github.com/Steinaver">@Steinaver</a>
+				</div>
+				<a href="https://rs.school/courses/javascript-ru">
+					<img class="footer__logo" src="./img/rs-school-logo.png" alt="rs-school-logo">
+				</a>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20250712233240"></script>
+</body>
+
+</html>
